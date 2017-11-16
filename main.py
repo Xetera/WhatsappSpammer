@@ -41,7 +41,7 @@ if __name__ == '__main__':
     web_driver_load()
     messenger_login()
     wait()
-    find_person = driver.find_element_by_xpath("//span[@title = '{}']".format(config.group_chat))
+    find_person = driver.find_element_by_xpath("//span[@title = '{}']".format(config.chat_name))
     find_person.click()
     web_obj = driver.find_element_by_xpath("//div[@contenteditable='true']")
     for i in range(number_of_times):
